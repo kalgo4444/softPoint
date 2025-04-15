@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFT POINT</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="icon" href="./assets/images/Logo.svg">
+</head>
+<body class="min-h-[500vh]">
+    <header class="bg-white w-full sticky top-0 left-0 z-50">
+        <nav class="h-[127px] border headerContainer flex justify-between items-center">
+            <!-- Logo  -->
+            <a href="#">
+            <div class="flex gap-1.5 items-center">
+                    <div class="size-6 bg-mainColor rounded-full"></div>
+                    <p class="text-mainColor font-semibold text-base sm:text-[20px] uppercase">soft point</p>
+                </div>
+            </a>
+            <!-- Links -->
+            <ul class="flex gap-10 text-textColor max-md:hidden">
+                <li>
+                    <a href="#feature" class="text-lg hover:text-mainColor duration-100">
+                        <span>Feature</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#feature" class="text-lg hover:text-mainColor duration-100">
+                        <span>Download</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#feature" class="text-lg hover:text-mainColor duration-100">
+                        <span>Pricing</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- action  -->
+            <div class="flex items-center gap-0.5">
+                <button class="py-[14px] px-4 sm:px-[29px] border border-transparent active:border-btnColor active:text-btnColor hover:text-mainColor text-sm sm:text-lg duration-100 rounded-md">Login</button>
+                <button class="py-[14px] px-4 sm:px-[29px] border border-transparent bg-btnColor hover:border-btnColor hover:bg-white text-white hover:text-btnColor text-sm sm:text-lg duration-100 rounded-md">Sign up</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- hero  -->
+        <section class="mt-2 lg:mt-16">
+            <div class="heroContainer flex max-lg:flex-col-reverse">
+                <!-- header  -->
+                <div class="w-full lg:w-[40%]">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-semibold w-full lg:max-w-[487px]">Develop Your Life With <span class="text-mainColor">One Step.</span></h1>
+                    <p class="text-base sm::text-lg md:text-[21px] text-textColor max-w-[509px] w-full">Pushing the possibilities of the internet. Good for
+                        the last software. <span class="font-bold">Make it A software night.</span></p>
+                        <!-- input  -->
+                        <form action="">
+                            <div class="mt-[30px] max-w-[432px]  shadow-2xl flex justify-between p-1 rounded-b-lg">
+                                <input type="text" placeholder="Enter your email" class="placeholder:text-lg indent-6">
+                                <button class="text-[21px] py-[11px] px-[33px] bg-btnColor text-white rounded-md">Send</button>
+                            </div>
+                        </form>
+                        <!-- brands logo  -->
+                        <div class="flex items-center gap-8 mt-8">
+                            <img src="./assets/images/gp.svg" alt="">
+                            <img src="./assets/images/as.svg" alt="">
+                        </div>
+
+                </div>
+                <div class="w-full lg:w-[60%] place-content-center">
+                    <img src="./assets/images/heroImg.png" alt="" class="lg:-translate-y-[8%]">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

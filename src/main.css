@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Poppins;
+    src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+@import "tailwindcss";
+
+@theme{
+    --color-mainColor: #8EE6C9;
+    --color-btnColor: #F44545;
+    --color-textColor: #021206;
+}
+
+*{
+    font-family: Poppins;
+}
+
+.headerContainer{
+    max-width: 1195px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.heroContainer{
+    max-width: 1361px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+button,input{
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
