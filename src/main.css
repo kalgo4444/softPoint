@@ -36,3 +36,18 @@ button,input{
     outline: none;
     border: none;
 }
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: .3s ease;
+}
+header.shrink{
+    box-shadow: 0 5px 5px #0001;
+}
+header.shrink .navbar{
+    height: 90px;
+}
