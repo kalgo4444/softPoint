@@ -198,18 +198,6 @@
   .static {
     position: static;
   }
-  .sticky {
-    position: sticky;
-  }
-  .top-0 {
-    top: calc(var(--spacing) * 0);
-  }
-  .left-0 {
-    left: calc(var(--spacing) * 0);
-  }
-  .z-50 {
-    z-index: 50;
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -264,10 +252,6 @@
   .table {
     display: table;
   }
-  .size-6 {
-    width: calc(var(--spacing) * 6);
-    height: calc(var(--spacing) * 6);
-  }
   .size-\[75px\] {
     width: 75px;
     height: 75px;
@@ -278,9 +262,6 @@
   .w-full {
     width: 100%;
   }
-  .max-w-\[244px\] {
-    max-width: 244px;
-  }
   .max-w-\[432px\] {
     max-width: 432px;
   }
@@ -289,12 +270,6 @@
   }
   .flex-1 {
     flex: 1;
-  }
-  .flex-1\/2 {
-    flex: calc(1/2 * 100%);
-  }
-  .flex-auto {
-    flex: auto;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -365,9 +340,6 @@
   .gap-\[30px\] {
     gap: 30px;
   }
-  .gap-\[150px\] {
-    gap: 150px;
-  }
   .gap-x-16 {
     column-gap: calc(var(--spacing) * 16);
   }
@@ -386,14 +358,8 @@
   .gap-y-12 {
     row-gap: calc(var(--spacing) * 12);
   }
-  .gap-y-\[150px\] {
-    row-gap: 150px;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
-  }
-  .rounded-full {
-    border-radius: calc(infinity * 1px);
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
@@ -403,10 +369,6 @@
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
-  }
-  .rounded-b-lg {
-    border-bottom-right-radius: var(--radius-lg);
-    border-bottom-left-radius: var(--radius-lg);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -457,14 +419,20 @@
   .p-\[35px\] {
     padding: 35px;
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-3\.5 {
+    padding-inline: calc(var(--spacing) * 3.5);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
-  }
-  .px-7 {
-    padding-inline: calc(var(--spacing) * 7);
   }
   .px-\[39px\] {
     padding-inline: 39px;
@@ -513,25 +481,9 @@
   .text-\[21px\] {
     font-size: 21px;
   }
-  .leading-2 {
-    --tw-leading: calc(var(--spacing) * 2);
-    line-height: calc(var(--spacing) * 2);
-  }
-  .leading-2\.5 {
-    --tw-leading: calc(var(--spacing) * 2.5);
-    line-height: calc(var(--spacing) * 2.5);
-  }
-  .leading-5 {
-    --tw-leading: calc(var(--spacing) * 5);
-    line-height: calc(var(--spacing) * 5);
-  }
   .leading-8 {
     --tw-leading: calc(var(--spacing) * 8);
     line-height: calc(var(--spacing) * 8);
-  }
-  .leading-10 {
-    --tw-leading: calc(var(--spacing) * 10);
-    line-height: calc(var(--spacing) * 10);
   }
   .leading-12 {
     --tw-leading: calc(var(--spacing) * 12);
@@ -556,12 +508,6 @@
   .text-\[\#18CA90\] {
     color: #18CA90;
   }
-  .text-green-400 {
-    color: var(--color-green-400);
-  }
-  .text-mainColor {
-    color: var(--color-mainColor);
-  }
   .text-red-500 {
     color: var(--color-red-500);
   }
@@ -570,9 +516,6 @@
   }
   .text-white {
     color: var(--color-white);
-  }
-  .uppercase {
-    text-transform: uppercase;
   }
   .underline {
     text-decoration-line: underline;
@@ -697,20 +640,6 @@
       }
     }
   }
-  .hover\:text-gray-800 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-gray-800);
-      }
-    }
-  }
-  .hover\:text-mainColor {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-mainColor);
-      }
-    }
-  }
   .hover\:text-red-500 {
     &:hover {
       @media (hover: hover) {
@@ -756,6 +685,16 @@
       margin-top: 110px;
     }
   }
+  .sm\:max-w-\[432px\] {
+    @media (width >= 40rem) {
+      max-width: 432px;
+    }
+  }
+  .sm\:flex-1 {
+    @media (width >= 40rem) {
+      flex: 1;
+    }
+  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -786,11 +725,6 @@
       padding-inline: 32px;
     }
   }
-  .sm\:px-\[33px\] {
-    @media (width >= 40rem) {
-      padding-inline: 33px;
-    }
-  }
   .sm\:py-16 {
     @media (width >= 40rem) {
       padding-block: calc(var(--spacing) * 16);
@@ -816,11 +750,6 @@
     @media (width >= 40rem) {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
-    }
-  }
-  .sm\:text-\[20px\] {
-    @media (width >= 40rem) {
-      font-size: 20px;
     }
   }
   .md\:max-w-\[244px\] {
