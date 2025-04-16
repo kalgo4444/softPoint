@@ -8,36 +8,35 @@
     <link rel="icon" href="./assets/images/Logo.svg">
 </head>
 <body>
-    <header class="bg-white w-full sticky top-0 left-0 z-50">
+    <header class="bg-white w-full static">
         <nav class="h-[127px] headerContainer flex justify-between items-center">
             <!-- Logo  -->
             <a href="#">
-            <div class="flex gap-1.5 items-center">
-                    <div class="size-6 bg-mainColor rounded-full"></div>
-                    <p class="text-mainColor font-semibold text-base sm:text-[20px] uppercase">soft point</p>
+            <div class="flex gap-1.5 items-center imageScale">
+                    <img src="./assets/images/Logo.png" alt="">
                 </div>
             </a>
             <!-- Links -->
             <ul class="flex gap-10 text-textColor max-md:hidden">
                 <li>
-                    <a href="#feature" class="text-lg hover:text-mainColor duration-100">
+                    <a href="#feature" class="text-lg hover:text-gray-400 duration-100">
                         <span>Feature</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#feature" class="text-lg hover:text-mainColor duration-100">
+                    <a href="#download" class="text-lg hover:text-gray-400 duration-100">
                         <span>Download</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#feature" class="text-lg hover:text-mainColor duration-100">
+                    <a href="#priceing" class="text-lg hover:text-gray-400 duration-100">
                         <span>Pricing</span>
                     </a>
                 </li>
             </ul>
             <!-- action  -->
             <div class="flex items-center gap-0.5">
-                <button class="py-[14px] px-4 sm:px-[29px] border border-transparent active:border-btnColor active:text-btnColor hover:text-mainColor text-sm sm:text-lg duration-100 rounded-md">Login</button>
+                <button class="py-[14px] px-4 sm:px-[29px] border border-transparent active:border-btnColor active:text-btnColor hover:text-gray-400 text-sm sm:text-lg duration-100 rounded-md">Login</button>
                 <button class="py-[14px] px-4 sm:px-[29px] border border-transparent bg-btnColor hover:border-btnColor hover:bg-white text-white hover:text-btnColor text-sm sm:text-lg duration-100 rounded-md">Sign up</button>
             </div>
         </nav>
@@ -48,45 +47,45 @@
             <div class="heroContainer flex max-lg:flex-col-reverse">
                 <!-- header  -->
                 <div class="w-full lg:w-[40%] max-md:mt-12">
-                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-semibold w-full lg:max-w-[487px]">Develop Your Life With <span class="text-mainColor">One Step.</span></h1>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-semibold w-full lg:max-w-[487px]">Develop Your Life With <span class="text-[#18CA90]">One Step.</span></h1>
                     <p class="text-base sm::text-lg md:text-[21px] text-textColor max-w-[509px] w-full">Pushing the possibilities of the internet. Good for
                         the last software. <span class="font-bold">Make it A software night.</span></p>
                         <!-- input  -->
                         <form action="">
-                            <div class="mt-[30px] max-w-[432px]  shadow-xl focus-within:shadow-2xl duration-100 flex justify-between p-1 rounded-b-lg">
-                                <input type="text" placeholder="Enter your email" class="placeholder:text-xs placeholder:lg:text-lg indent-2.5 sm:indent-6">
-                                <button class="text-sm mg:text-[21px] py-[11px] px-7 sm:px-[33px] bg-btnColor text-white rounded-md">Send</button>
+                            <div class="mt-[30px] max-w-[432px] w-full flex shadow-xl focus-within:shadow-2xl duration-100 p-1 rounded-lg">
+                                <input type="email" placeholder="Enter your email" class="placeholder:text-xs placeholder:lg:text-lg indent-2.5 sm:indent-6 flex-1">
+                                <button class="text-sm mg:text-[21px] py-[11px] px-6 sm:px-[32px] bg-btnColor border border-transparent hover:bg-white hover:border-red-500 text-white hover:text-red-500 rounded-md">Send</button>
                             </div>
                         </form>
                         <!-- brands logo  -->
                         <div class="flex items-center gap-3 sm:gap-8 mt-8">
-                            <img src="./assets/images/gp.svg" alt="" class="scale-75 md:scale-100">
-                            <img src="./assets/images/as.svg" alt="" class="scale-75 md:scale-100">
+                            <img src="./assets/images/gp.svg" alt="" class="scale-75 md:scale-100 imageScale">
+                            <img src="./assets/images/as.svg" alt="" class="scale-75 md:scale-100 imageScale">
                         </div>
 
                 </div>
                 <div class="w-full lg:w-[60%] place-content-center">
-                    <img src="./assets/images/heroImg.png" alt="" class="lg:-translate-y-[8%]">
+                    <img src="./assets/images/heroImg.png" alt="" class="lg:-translate-y-[8%] imageScale">
                 </div>
             </div>
         </section>
         <!-- brands  -->
         <section class="mt-12 bg-mainColor">
             <div class="headerContainer py-[50px] items-center gap-x-16 sm:gap-x-[85px] gap-y-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-                <img src="./assets/images/Google.svg" alt="">
-                <img src="./assets/images/Avast.svg" alt="">
-                <img src="./assets/images/Ebay.svg" alt="">
-                <img src="./assets/images/paypal.svg" alt="">
-                <img src="./assets/images/HubSpot.svg" alt="">
+                <img src="./assets/images/Google.svg" alt="" class="imageScale">
+                <img src="./assets/images/Avast.svg" alt="" class="imageScale">
+                <img src="./assets/images/Ebay.svg" alt="" class="imageScale">
+                <img src="./assets/images/paypal.svg" alt="" class="imageScale">
+                <img src="./assets/images/HubSpot.svg" alt="" class="imageScale">
             </div>
         </section>
         <!-- solution  -->
-        <section class="mt-16 sm:mt-[110px] ">
+        <section id="feature" class="py-16 sm:pt-[130px] ">
             <div class="contentContainer flex flex-col lg:flex-row gap-x-[74px] gap-y-10 sm:gap-y-[74px] items-center">
                 <!-- cards  -->
                 <div class="w-full lg:w-[50%] grid grid-cols-1 sm:grid-cols-2 gap-[30px]">
                     <!-- card 1 -->
-                    <div class="border border-gray-400 rounded-2xl p-[35px] hover:border-transparent hover:shadow-lg duration-200">
+                    <div class="border border-gray-400 rounded-2xl p-[35px] hover:border-transparent hover:shadow-lg duration-200 imageScale">
                         <div class="size-[75px] bg-[#F14C4C] flex items-center justify-center rounded-2xl shadow-2xl shadow-red-400">
                             <img src="./assets/images/content1svg.svg" alt="" class="">
                         </div>
@@ -94,7 +93,7 @@
                         <p class="mt-[9px]">A complete about-face in core economic amsterday bilamco progressive.</p>
                     </div>
                     <!-- card 2 -->
-                    <div class="border border-gray-400 rounded-2xl p-[35px] hover:border-transparent hover:shadow-lg duration-200">
+                    <div class="border border-gray-400 rounded-2xl p-[35px] hover:border-transparent hover:shadow-lg duration-200 imageScale">
                         <div class="size-[75px] bg-[#4EDAAC] flex items-center justify-center rounded-2xl shadow-2xl shadow-[#4EDAAC]">
                             <img src="./assets/images/content2.svg" alt="" class="">
                         </div>
@@ -103,7 +102,7 @@
                             core economic amsterday bilamco progressive.</p>
                     </div>
                     <!-- card 3 -->
-                    <div class="border border-gray-400 rounded-2xl p-[35px] hover:border-transparent hover:shadow-lg duration-200">
+                    <div class="border border-gray-400 rounded-2xl p-[35px] hover:border-transparent hover:shadow-lg duration-200 imageScale">
                         <div class="size-[75px] bg-[#FABC13] flex items-center justify-center rounded-2xl shadow-2xl shadow-[#FABC13]">
                             <img src="./assets/images/content3.svg" alt="" class="">
                         </div>
@@ -112,7 +111,7 @@
                             core economic amsterday bilamco progressive.</p>
                     </div>
                     <!-- card 4 -->
-                    <div class="border border-gray-400 rounded-2xl p-[35px] hover:border-transparent hover:shadow-lg duration-200">
+                    <div class="border border-gray-400 rounded-2xl p-[35px] hover:border-transparent hover:shadow-lg duration-200 imageScale">
                         <div class="size-[75px] bg-[#EC4EDC] flex items-center justify-center rounded-2xl shadow-2xl shadow-[#EC4EDC]">
                             <img src="./assets/images/content3.svg" alt="" class="">
                         </div>
@@ -127,7 +126,7 @@
                     <p class="mt-5 text-lg max-w-[500px]:text-base lg:max-w-[480px] w-full">The source of powerful qorld and making future sure. Its a  straight forward software.</p>
                     <p class="mt-4 text-lg max-w-[500px]:text-base lg:max-w-[480px] w-full">Where possibilities are made possible. We must have expand <span class="font-semibold">Possibilities of better tomorrow.</span> The directly secure of your network deliveing  services.</p>
                     <div class="mt-7 flex items-center gap-4">
-                        <button class="text-white px-[39px] py-[14px] bg-black rounded-xl duration-100">Learn ore</button>
+                        <button class="text-white px-[39px] py-[14px] bg-black border border-black hover:bg-white hover:text-black hover:shadow-lg rounded-xl duration-100">Learn ore</button>
                         <span><a href="#" class="text-red-500 text-lg">Ask?</a></span>
                     </div>
                 </div>
@@ -138,7 +137,7 @@
             <div class="contentContainer flex flex-col lg:flex-row-reverse gap-x-[74px] gap-y-1 lg:gap-y-[74px] items-center">
                 <!-- img  -->
                 <div class="w-full lg:w-[50%]">
-                    <img src="./assets/images/content5.png" alt="" class="">
+                    <img src="./assets/images/content5.png" alt="" class="imageScale">
                 </div>
                 <!-- title  -->
                 <div class="w-full lg:w-[50%]">
@@ -173,7 +172,7 @@
             <div class="contentContainer flex flex-col lg:flex-row gap-x-[74px] gap-y-1 sm:gap-y-[74px] items-center">
                 <!-- img  -->
                 <div class="w-full lg:w-[50%] my-auto">
-                    <img src="./assets/images/context6.png" alt="">
+                    <img src="./assets/images/context6.png" alt="" class="imageScale">
                 </div>
                 <!-- title  -->
                 <div class="w-full lg:w-[50%]">
@@ -183,6 +182,61 @@
                 </div>
             </div>
         </section>
+        <!-- security  -->
+        <section id="download" class="mt-16 py-8 sm:py-16 md:py-[91px] sm:mt-[110px] bg-mainColor">
+            <div class="contentContainer flex flex-col lg:flex-row-reverse gap-x-[74px] gap-y-12 sm:gap-y-[74px] items-center">
+                <!-- img  -->
+                <div class="w-full lg:w-[50%] my-auto lg:relative">
+                    <img src="./assets/images/software1.png" alt="" class="duration-150 imageScale lg:absolute mx-auto lg:-translate-y-[60%] md:scale-110">
+                </div>
+                <!-- title  -->
+                <div class="w-full lg:w-[50%]">
+                    <h2 class="lg:max-w-[380px] w-full text-3xl sm:text-4xl md:text-[45px] font-semibold leading-[60px]">Get our software</h2>
+                    <p class="mt-5 text-lg max-w-[500px]:text-base lg:max-w-[480px] w-full">The source of powerful qorld and making your future sure. It’s a  straight forward software for you.</p>
+                    <p class="mt-4 text-lg max-w-[500px]:text-base lg:max-w-[480px] w-full">The source of powerful qorld and making future sure. Its a  straight forward software. Paired with dynamic image of the actual tool and the performance.</p>
+                    <button class="mt-[45px] text-white px-[39px] py-[14px] bg-red-500 border border-transparent rounded-xl duration-100 scaleBtn">Download now</button>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="bg-[#F4FDFA] opacity-100 mt-[120px]">
+        <div class="contentContainer py-[50px] gap-y-10 gap-x-[150px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <!-- col 1 -->
+            <div>
+                <img src="./assets/images/Logo.png" alt="">
+                <p class="mt-5 md:max-w-[244px] text-base md:text-xs w-full">Software with new look. Live the life that you expect.</p>
+            </div>
+            <!-- col 2 -->
+            <ul class="leading-8">
+                <p class="mb-5 text-[21px] font-medium">Useful link</p>
+                <li>
+                    <a href="#" class="hover:text-gray-400 duration-100">Behance</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-gray-400 duration-100">Dribbble</a>
+                </li>
+            </ul>
+            <!-- col 3 -->
+            <ul class="leading-8">
+                <p class="mb-5 text-[21px] font-medium">Support</p>
+                <li>
+                    <a href="#" class="hover:text-gray-400 duration-100">Conditions</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-gray-400 duration-100">Privecy and policy</a>
+                </li>
+            </ul>
+            <!-- col 4 -->
+            <ul class="leading-8">
+                <p class="mb-5 text-[21px] font-medium">Contact us</p>
+                <li>
+                    <a href="tel:+(773)2178810" class="hover:text-gray-400 duration-100">(773) 217-8810</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-gray-400 duration-100">Downers Grove, IL 60515</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

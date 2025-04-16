@@ -6,7 +6,7 @@
 @import "tailwindcss";
 
 @theme{
-    --color-mainColor: #8EE6C9;
+    --color-mainColor: #F4FDFA;
     --color-btnColor: #F44545;
     --color-textColor: #021206;
 }
@@ -40,21 +40,16 @@
 }
 button,input{
     cursor: pointer;
+}
+input{
     outline: none;
-    border: none;
 }
 
-header{
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    transition: .3s ease;
+.scaleBtn:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 7px #000;
 }
-header.shrink{
-    box-shadow: 0 5px 5px #0001;
-}
-header.shrink .navbar{
-    height: 90px;
+.imageScale:hover{
+    transform: scale(1.03);
+    transition: .25s ease;
 }
